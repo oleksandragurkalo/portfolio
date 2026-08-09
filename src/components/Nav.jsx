@@ -5,7 +5,7 @@ import './Nav.css'
 
 function Nav() {
   const ids = useMemo(() => nav.links.map((link) => link.href.slice(1)), [])
-  const activeId = useScrollSpy(ids, 100)
+  const activeId = useScrollSpy(ids, 58)
 
   return (
     <nav>
