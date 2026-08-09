@@ -1,0 +1,113 @@
+.bottom-bar {
+  background: var(--navy);
+  margin-top: 3.5rem;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  min-height: 160px;
+}
+
+.bottom-cta {
+  padding: 2.5rem 3rem;
+  background: var(--accent);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.bottom-contact {
+  padding: 2.5rem 3rem;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bot-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bot-cta-h {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+.bot-cta-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.25rem;
+}
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff;
+  color: var(--accent);
+  padding: 9px 18px;
+  border-radius: var(--r);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.btn-white:hover {
+  opacity: 0.9;
+}
+
+.bot-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 7px;
+}
+.bot-contact-row svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+.bot-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.bot-social {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.bot-social:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.bot-social svg {
+  width: 14px;
+  height: 14px;
+  color: #94a3b8;
+}
+
+@media (max-width: 640px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-cta {
+    border-right: none;
+  }
+}
