@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  --off-white: #F7F6F2;
+  --slate-900: #1A1B1E;
+  --slate-700: #2E3035;
+  --slate-500: #6B6F7A;
+  --slate-300: #C4C6CC;
+  --slate-100: #EEEEF0;
+  --amber: #D48B3A;
+  --amber-light: #F5E6CC;
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --section-pad: 96px;
+  --container: 1100px;
+  --radius: 4px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--off-white);
+  color: var(--slate-900);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+::selection { background: var(--amber-light); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--off-white); }
+::-webkit-scrollbar-thumb { background: var(--slate-300); border-radius: 3px; }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: var(--radius); }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 32px; }
+@media (max-width: 768px) {
+  :root { --section-pad: 64px; }
+  .container { padding: 0 20px; }
+}
