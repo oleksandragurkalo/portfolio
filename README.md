@@ -1,6 +1,6 @@
-# Sandra Gurkalo — Portfolio Site
+# Oleksandra Gurkalo — Portfolio Site
 
-Personal brand site built with **React + Vite**. Works for both UI development and coordination/PM job tracks.
+Personal portfolio site built with **React + Vite**.
 
 ## Quick start
 
@@ -8,32 +8,44 @@ Personal brand site built with **React + Vite**. Works for both UI development a
 npm install
 npm run dev       # localhost:5173
 npm run build     # production build → dist/
+npm run lint      # oxlint
 ```
 
 ## Customise — start here
 
 All content lives in **one file**: `src/data/content.js`
 
-- Update your email, LinkedIn, GitHub URLs
-- Edit the `about.body` paragraph (this is your pitch)
-- Add/edit entries in the `work` array for your case studies
-- Drop your CV PDFs into `/public/` and name them `cv-tech.pdf` and `cv-coord.pdf`
+- `nav` — nav bar links
+- `hero` — name, tagline, CTAs, social links, hero stats
+- `projects` — the "Selected Work" cards (title, description, tags, live/GitHub links, screenshot filename)
+- `statsBar` — the stat strip under Selected Work
+- `experience` — current role, bullets, key achievement
+- `bring` — "What I Bring to the Table" cards
+- `stack` — Tech Stack pills, grouped by category
+- `cta` / `contact` — the dark bottom bar
+- `footer` — footer links and copyright line
+
+Project screenshots live in `src/assets/projects/` — filenames are referenced by the `image` field on each entry in `projects`.
 
 ## Structure
 
 ```
 src/
-  data/content.js        ← ALL your text content here
+  data/content.js          ← ALL text content and project data
   components/
-    Nav.jsx / Nav.css    ← fixed top nav with scroll spy
-  sections/
-    Hero.jsx / Hero.css  ← full-height landing with animated headline
-    About.jsx / About.css ← bio + 4 key stats
-    Work.jsx / Work.css  ← filterable project cards (tech / coord / both)
-    Skills.jsx / Skills.css ← two-column skill tracks
-    Contact.jsx / Contact.css ← contact links + dual CV download
+    Nav.jsx / Nav.css      ← sticky top nav with scroll spy
+    Footer.jsx / Footer.css
+    Icons.jsx              ← shared inline SVG icons
   hooks/
-    useScrollSpy.js      ← tracks which section is in view for nav
+    useScrollSpy.js        ← tracks which section is in view for nav highlighting
+  sections/
+    Hero.jsx / Hero.css
+    Work.jsx / Work.css            ← project cards grid
+    Stats.jsx / Stats.css          ← stat strip
+    Experience.jsx / Experience.css
+    About.jsx / About.css          ← "What I Bring to the Table"
+    Skills.jsx / Skills.css        ← "Tech Stack"
+    Contact.jsx / Contact.css      ← dark CTA + contact bar
 ```
 
 ## Deploy (free)
@@ -45,12 +57,3 @@ src/
 **Netlify**:
 1. Push to GitHub
 2. New site → build command: `npm run build`, publish dir: `dist`
-
-## Next steps
-
-- [ ] Add your real email and LinkedIn URL in `content.js`
-- [ ] Write 1–2 more case studies (no NDA content needed — focus on process + metrics)
-- [ ] Add CV PDFs to `/public/`
-- [ ] Add a `/public/favicon.svg` (your initials or a simple mark)
-- [ ] Consider a short Loom video embed in the Contact section
-- [ ] Push to GitHub — the repo itself is part of your portfolio
