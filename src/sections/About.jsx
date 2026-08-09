@@ -1,0 +1,33 @@
+import { bring } from '../data/content'
+import { StarIcon } from '../components/Icons'
+import './About.css'
+
+function About() {
+  return (
+    <section id="about">
+      <div className="wrap">
+        <div className="sec-header">
+          <h2 className="sec-title">
+            <StarIcon width={16} height={16} className="sec-icon" />
+            What I Bring to the Table
+          </h2>
+        </div>
+        <div className="bring-grid">
+          {bring.map((item) => (
+            <div className="bring-card" key={item.title}>
+              <div className="bring-icon" style={{ background: item.bg }}>
+                {item.icon}
+              </div>
+              <div>
+                <p className="bring-title">{item.title}</p>
+                <p className="bring-desc">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default About
