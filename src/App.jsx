@@ -28,8 +28,8 @@ function App() {
         <Stats />
         <hr className="divider" />
         <Experience />
-        <About />
         <Skills />
+        <About />
         <Contact />
       </main>
       <Footer />
