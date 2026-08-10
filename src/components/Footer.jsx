@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div className="wrap footer-inner">
         <a className="footer-logo" href="#home">
-          <span style={{ color: 'var(--accent)' }}>{'</>'}</span> sandradev.ca
+          <span style={{ color: 'var(--accent)' }}>{'</>'}</span> Oleksandra Gurkalo
         </a>
         <p className="footer-copy">{footer.copy}</p>
         <div className="footer-links">
