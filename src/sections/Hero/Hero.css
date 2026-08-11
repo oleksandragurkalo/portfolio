@@ -115,6 +115,7 @@
 
 .hero-photo-col {
   position: relative;
+  max-width: 380px;
 }
 
 .hero-img {
@@ -171,7 +172,8 @@
     grid-template-columns: 1fr 1fr;
   }
   .hero-photo-col {
-    display: none;
+    grid-column: 1 / -1;
+    margin: 0 auto;
   }
 }
 
@@ -184,5 +186,11 @@
   }
   .hero-name {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-photo-col {
+    max-width: 100%;
   }
 }
