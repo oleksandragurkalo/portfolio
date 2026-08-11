@@ -55,10 +55,11 @@ section {
 
 /* offset anchor targets so the sticky nav doesn't cover the top of the section on jump */
 #home,
+#about,
 #work,
 #experience,
-#about,
 #skills,
+#workflow,
 #contact {
   scroll-margin-top: 90px;
 }
