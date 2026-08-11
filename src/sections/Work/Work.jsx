@@ -76,6 +76,13 @@ function ProjectCard({ project, expanded, onToggle }) {
       <div className="pcard-body">
         <div className={`pcard-clamp${expanded ? ' expanded' : ''}`}>
           <p className="pcard-desc">{project.desc}</p>
+          {project.details && (
+            <ul className="pcard-details">
+              {project.details.map((detail) => (
+                <li key={detail.slice(0, 24)}>{detail}</li>
+              ))}
+            </ul>
+          )}
           {project.result && <p className="pcard-result">{project.result}</p>}
         </div>
         <ReadMoreButton expanded={expanded} onToggle={onToggle} />
