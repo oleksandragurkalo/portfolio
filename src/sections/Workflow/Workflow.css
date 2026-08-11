@@ -1,0 +1,48 @@
+#workflow {
+  border-top: 1px solid var(--border);
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.wf-step {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1rem 1.1rem;
+}
+
+.wf-number {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.wf-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 6px 0 4px;
+}
+
+.wf-desc {
+  font-size: 12px;
+  color: var(--t3);
+  line-height: 1.55;
+}
+
+@media (max-width: 960px) {
+  .workflow-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
