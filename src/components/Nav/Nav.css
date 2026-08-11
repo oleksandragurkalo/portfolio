@@ -51,7 +51,10 @@ nav {
   transition: color 0.15s, border-color 0.15s;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: var(--t1);
+}
+
 .nav-links a.active {
   color: var(--t1);
   border-bottom-color: var(--accent);
@@ -110,7 +113,10 @@ nav {
       text-align: center;
   }
 
-  .nav-links a:hover,
+  .nav-links a:hover {
+    background: var(--bg2);
+  }
+
   .nav-links a.active {
     border-bottom-color: transparent;
     background: var(--bg2);
