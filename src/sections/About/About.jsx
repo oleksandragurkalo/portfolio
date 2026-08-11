@@ -1,4 +1,4 @@
-import { bring } from '../../data/content.js'
+import { about, bring } from '../../data/content.js'
 import { StarIcon } from '../../components/Icons/Icons.jsx'
 import './About.css'
 
@@ -9,9 +9,15 @@ function About() {
         <div className="sec-header">
           <h2 className="sec-title">
             <StarIcon width={16} height={16} className="sec-icon" />
-            What I Bring to the Table
+            {about.title}
           </h2>
         </div>
+        <div className="about-text">
+          {about.text.map((paragraph) => (
+            <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+          ))}
+        </div>
+        <p className="about-bring-label">What I Bring to the Table</p>
         <div className="bring-grid">
           {bring.map((item) => (
             <div className="bring-card" key={item.title}>
