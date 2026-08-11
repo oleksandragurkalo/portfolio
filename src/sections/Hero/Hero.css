@@ -20,7 +20,7 @@
   font-weight: 800;
   line-height: 1.08;
   letter-spacing: -1.5px;
-  color: var(--t1);
+  color: var(--bg);
   margin-bottom: 1rem;
 }
 
@@ -72,7 +72,7 @@
 .hero-stats {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 12px;
 }
 
 .hstat {
@@ -99,7 +99,7 @@
 }
 
 .hstat-num {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--t1);
   letter-spacing: -0.5px;
@@ -109,7 +109,8 @@
 .hstat-label {
   font-size: 11px;
   color: var(--t4);
-  margin-top: 1px;
+  margin-top: 8px;
+  line-height: 1.2;
 }
 
 .hero-photo-col {

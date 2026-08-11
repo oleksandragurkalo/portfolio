@@ -1,5 +1,5 @@
-import { experience } from '../data/content'
-import { BriefcaseIcon } from '../components/Icons'
+import { experience } from '../../data/content.js'
+import { BriefcaseIcon } from '../../components/Icons/Icons.jsx'
 import './Experience.css'
 
 function Experience() {
@@ -30,9 +30,13 @@ function Experience() {
           <div className="exp-ach">
             <span className="exp-ach-icon">📈</span>
             <div style={{ flex: 1 }}>
-              <p className="exp-ach-title">{experience.achievement.title}</p>
-              <p className="exp-ach-text">{experience.achievement.text}</p>
-              <span className="exp-ach-big">{experience.achievement.big}</span>
+              {experience.achievements.map((achievement, i) => (
+                <>
+                <p className="exp-ach-title">{achievement.text}</p>
+                <p className="exp-ach-text">{achievement.label}</p>
+                <span className="exp-ach-big">{achievement.title}</span>
+                </>
+              ))}
             </div>
           </div>
         </div>

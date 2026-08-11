@@ -1,5 +1,5 @@
-import { bring } from '../data/content'
-import { StarIcon } from '../components/Icons'
+import { bring } from '../../data/content.js'
+import { StarIcon } from '../../components/Icons/Icons.jsx'
 import './About.css'
 
 function About() {

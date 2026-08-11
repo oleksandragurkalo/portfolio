@@ -1,6 +1,6 @@
-import { hero } from '../data/content'
-import { GithubIcon, LinkedinIcon, EmailIcon } from '../components/Icons'
-import heroPhoto from '../assets/oleksandra.jpg'
+import { hero } from '../../data/content.js'
+import { GithubIcon, LinkedinIcon, EmailIcon } from '../../components/Icons/Icons.jsx'
+import heroPhoto from '../../assets/oleksandra.jpg'
 import './Hero.css'
 
 const socialIcons = {
@@ -11,7 +11,7 @@ const socialIcons = {
 
 function Hero() {
   return (
-    <section id="home" style={{ padding: 0, borderBottom: '1px solid var(--border)' }}>
+    <section id="home" style={{ padding: 0, borderBottom: '1px solid var(--border)', background: 'var(--navy)' }}>
       <div className="wrap">
         <div className="hero">
           <div>
@@ -56,7 +56,7 @@ function Hero() {
                   {stat.icon}
                 </div>
                 <div>
-                  <div className="hstat-num">{stat.num}</div>
+                  <div className="hstat-num">{stat.title}</div>
                   <div className="hstat-label">{stat.label}</div>
                 </div>
               </div>

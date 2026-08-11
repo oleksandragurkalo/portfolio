@@ -16,7 +16,7 @@ export const hero = {
   sub: 'I build responsive, accessible and maintainable component libraries and design systems with modern frontend technologies.',
   ctas: [
     { label: 'View my work →', href: '#work', variant: 'primary' },
-    { label: 'Get in touch →', href: 'mailto:oleksandra.gurkalo@gmail.com', variant: 'outline' },
+    { label: 'Get in touch →', href: 'mailto:oleksandra.gurkalo@gmail.com', variant: 'white'},
   ],
   socials: [
     { label: 'GitHub', href: 'https://github.com/oleksandragurkalo', icon: 'github' },
@@ -24,10 +24,10 @@ export const hero = {
     { label: 'Email', href: 'mailto:oleksandra.gurkalo@gmail.com', icon: 'email' },
   ],
   stats: [
-    { icon: '📅', bg: null, num: '4+', label: 'Years of frontend experience' },
-    { icon: '</>', bg: '#f0fdf4', num: '30+', label: 'Projects completed' },
-    { icon: '🧩', bg: '#faf5ff', num: 'Reusable', label: 'Components & design systems' },
-    { icon: '📈', bg: '#fffbeb', num: '~75%', label: 'Less manual work with automation' },
+    { icon: '⚡', bg: '#f0fdf4', title: '75%', label: 'Faster project delivery through automation' },
+    { icon: '⏱', bg: '#eff6ff', title: 'Built to scale', label: 'Created reusable components and design systems that could be reskinned across multiple brands.'},
+    { icon: '🧩', bg: '#faf5ff', title: 'Pixel-perfect', label: 'Translated Figma designs into responsive, production-ready interfaces across web, email and iPad.'},
+    { icon: '🎯', bg: '#fff7ed', title: 'AI-powered workflow', label: 'Use AI agents and Figma MCP integration to accelerate scaffolding, debugging and design-to-code.'},
   ],
   badge: 'Montréal, Canada · Open to remote opportunities',
 }
@@ -152,10 +152,10 @@ export const sideProject = {
 }
 
 export const statsBar = [
-  { icon: '</>', num: '4+', label: 'Years of experience' },
-  { icon: '🚀', num: '30+', label: 'Projects completed' },
-  { icon: '🤝', num: 'Collaborative', label: 'Team player' },
-  { icon: '✅', num: 'Detail oriented', label: 'Clean & maintainable code' },
+  { icon: '</>', num: '4+', label: 'Years building for the web' },
+  { icon: '🚀', num: '30+', label: 'Digital projects delivered' },
+  { icon: '🧩', num: '100+', label: 'Reusable UI components' },
+  { icon: '🌍', num: '10+', label: 'International brands' },
 ]
 
 export const experience = {
@@ -163,18 +163,37 @@ export const experience = {
   company: 'Tieto',
   date: 'Feb 2022 – Present',
   bullets: [
-    'Build and maintain a component library and multi-channel design system (email, slide, briefs, banners) reused across ~20 clients, each spanning 5–10 brands',
-    'Ship interactive web presentations built to run on Veeva CRM’s iPad app, across 4–8 concurrent programs on an 8–10 person team',
-    'Deliver 30+ releases with the lowest defect/reopen rate on the team, including one cycle that cut post-release bugs by 35%',
-    'Estimate work accurately enough to avoid overruns, consistently hitting deadlines across concurrent client programs',
-    'Collaborate with designers, QA, backend developers and stakeholders across programs',
-    'Create automation tooling that improves team efficiency and reduces errors',
+    'Build and maintain a multi-channel design system for email, presentations, briefs and banners, supporting complex brand requirements across client programs',
+    'Develop interactive web presentations designed to run within Veeva CRM on iPad, supporting 4–8 concurrent programs as part of an 8–10 person team',
+    'Deliver releases with the lowest defect and reopen rate on the team, including a release cycle that reduced post-release bugs by 35%',
+    'Develop reusable React and TypeScript solutions for recurring frontend challenges, reducing duplication and improving consistency across projects',
+    'Identify and resolve complex rendering, responsive and cross-platform issues across web, email and iPad environments',
+    'Build internal automation tooling that streamlines repetitive workflows, reduces human error and improves release efficiency',
+    'Estimate and deliver work reliably across concurrent programs, consistently meeting deadlines without overruns',
+    'Work closely with designers, QA, backend developers and stakeholders to turn requirements and designs into production-ready solutions',
   ],
-  achievement: {
-    title: 'Key Achievement',
-    text: 'Automated repetitive workflows that reduced manual workload by ~75% across 30+ project cycles',
-    big: '~75%',
-  },
+  achievements: [
+    {
+      title: '75%',
+      label: 'Less manual work',
+      text: 'Automated repetitive workflows across 30+ project cycles, significantly reducing manual effort and human error.',
+    },
+    {
+      title: '-35%',
+      label: 'Post-release bugs',
+      text: 'Improved implementation and validation practices during a release cycle, reducing bugs after deployment.',
+    },
+    {
+      title: 'Lowest',
+      label: 'Defect / reopen rate',
+      text: 'Consistently maintained the lowest defect and reopen rate within the development team.',
+    },
+    {
+      title: '4–8',
+      label: 'Concurrent programs',
+      text: 'Delivered frontend work across multiple client programs simultaneously while maintaining quality and deadlines.',
+    },
+  ],
 }
 
 export const bring = [
@@ -202,12 +221,7 @@ export const cta = {
 
 export const contact = {
   location: 'Montréal, Canada',
-  email: 'oleksandra.gurkalo@gmail.com',
-  socials: [
-    { label: 'GitHub', href: 'https://github.com/oleksandragurkalo', icon: 'github' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/oleksandragurkalo/', icon: 'linkedin' },
-    { label: 'Email', href: 'mailto:oleksandra.gurkalo@gmail.com', icon: 'email' },
-  ],
+  email: 'oleksandra.gurkalo@gmail.com'
 }
 
 export const footer = {

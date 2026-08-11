@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { featuredProject, projects, sideProject } from '../data/content'
-import { GithubIcon } from '../components/Icons'
+import { featuredProject, projects, sideProject } from '../../data/content.js'
+import { GithubIcon } from '../../components/Icons/Icons.jsx'
 import './Work.css'
 
-const images = import.meta.glob('../assets/projects/*.jpg', { eager: true, import: 'default' })
+const images = import.meta.glob('../../assets/projects/*.jpg', { eager: true, import: 'default' })
 
 function imageFor(filename) {
-  return images[`../assets/projects/${filename}`]
+  return images[`../../assets/projects/${filename}`]
 }
 
 function ProjectPills({ pills }) {

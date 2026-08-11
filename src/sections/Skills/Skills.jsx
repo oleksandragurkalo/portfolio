@@ -1,5 +1,5 @@
-import { stack } from '../data/content'
-import { LayersIcon } from '../components/Icons'
+import { stack } from '../../data/content.js'
+import { LayersIcon } from '../../components/Icons/Icons.jsx'
 import './Skills.css'
 
 function Skills() {

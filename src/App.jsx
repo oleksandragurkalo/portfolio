@@ -1,13 +1,13 @@
 import { useEffect } from 'react'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Hero from './sections/Hero'
-import Work from './sections/Work'
-import Stats from './sections/Stats'
-import Experience from './sections/Experience'
-import About from './sections/About'
-import Skills from './sections/Skills'
-import Contact from './sections/Contact'
+import Nav from './components/Nav/Nav.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import Hero from './sections/Hero/Hero.jsx'
+import Work from './sections/Work/Work.jsx'
+import Stats from './sections/Stats/Stats.jsx'
+import Experience from './sections/Experience/Experience.jsx'
+import About from './sections/About/About.jsx'
+import Skills from './sections/Skills/Skills.jsx'
+import Contact from './sections/Contact/Contact.jsx'
 
 function App() {
   // Direct/deep links (e.g. shared as yoursite.com/#work) load before React

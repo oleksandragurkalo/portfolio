@@ -1,4 +1,4 @@
-import { statsBar } from '../data/content'
+import { statsBar } from '../../data/content.js'
 import './Stats.css'
 
 function Stats() {

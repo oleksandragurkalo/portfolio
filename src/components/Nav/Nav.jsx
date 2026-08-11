@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
-import { nav } from '../data/content'
-import { useScrollSpy } from '../hooks/useScrollSpy'
+import { nav } from '../../data/content.js'
+import { useScrollSpy } from '../../hooks/useScrollSpy.js'
 import './Nav.css'
 
 function Nav() {

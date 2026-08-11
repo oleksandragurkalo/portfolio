@@ -1,5 +1,5 @@
-import { cta, contact } from '../data/content'
-import { GithubIcon, LinkedinIcon, EmailIcon, MapPinIcon } from '../components/Icons'
+import { cta, contact } from '../../data/content.js'
+import { GithubIcon, LinkedinIcon, EmailIcon, MapPinIcon } from '../../components/Icons/Icons.jsx'
 import './Contact.css'
 
 const socialIcons = {
@@ -30,24 +30,6 @@ function Contact() {
             <div className="bot-contact-row">
               <EmailIcon />
               {contact.email}
-            </div>
-            <div className="bot-socials">
-              {contact.socials.map((s) => {
-                const Icon = socialIcons[s.icon]
-                const external = s.href.startsWith('http')
-                return (
-                  <a
-                    key={s.label}
-                    className="bot-social"
-                    href={s.href}
-                    aria-label={s.label}
-                    target={external ? '_blank' : undefined}
-                    rel={external ? 'noreferrer' : undefined}
-                  >
-                    <Icon stroke="#94a3b8" />
-                  </a>
-                )
-              })}
             </div>
           </div>
         </div>
