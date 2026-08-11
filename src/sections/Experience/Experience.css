@@ -48,17 +48,27 @@
   background: var(--accent-m);
 }
 
+.exp-ach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 .exp-ach {
   background: var(--accent-l);
   border-radius: var(--r2);
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
   display: flex;
   flex-direction: column;
+  gap: 4px;
+}
+.exp-ach-top {
+  display: flex;
+  align-items: center;
   gap: 8px;
-  height: 100%;
+  margin-bottom: 2px;
 }
 .exp-ach-icon {
-  font-size: 22px;
+  font-size: 18px;
 }
 .exp-ach-title {
   font-size: 11px;
@@ -66,7 +76,6 @@
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-top: 4px;
 }
 .exp-ach-text {
   font-size: 12px;
@@ -74,11 +83,10 @@
   line-height: 1.5;
 }
 .exp-ach-big {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--accent);
   letter-spacing: -0.5px;
-  margin-top: auto;
 }
 
 @media (max-width: 960px) {

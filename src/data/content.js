@@ -174,21 +174,19 @@ export const experience = {
   ],
   achievements: [
     {
+      icon: '⚙️',
       title: '75%',
       label: 'Less manual work',
       text: 'Automated repetitive workflows across 30+ project cycles, significantly reducing manual effort and human error.',
     },
     {
+      icon: '✅',
       title: '-35%',
-      label: 'Post-release bugs',
-      text: 'Improved implementation and validation practices during a release cycle, reducing bugs after deployment.',
-    },
-    {
-      title: 'Lowest',
       label: 'Defect / reopen rate',
-      text: 'Consistently maintained the lowest defect and reopen rate within the development team.',
+      text: 'Improved implementation and validation practices during a release cycle, reducing bugs after deployment. Consistently maintained the lowest defect and reopen rate within the development team.',
     },
     {
+      icon: '🗂️',
       title: '4–8',
       label: 'Concurrent programs',
       text: 'Delivered frontend work across multiple client programs simultaneously while maintaining quality and deadlines.',
@@ -197,19 +195,92 @@ export const experience = {
 }
 
 export const bring = [
-  { icon: '🖥️', bg: '#eff6ff', title: 'UI Engineering', desc: 'Responsive, accessible and user-focused interfaces' },
-  { icon: '🧩', bg: '#faf5ff', title: 'Component Architecture', desc: 'Reusable components and design-system mindset' },
-  { icon: '🔍', bg: '#fff7ed', title: 'Cross-browser QA', desc: 'Manual testing across browsers and devices' },
-  { icon: '💡', bg: '#fef2f2', title: 'Problem Solving', desc: 'Debugging complex issues and shipping solutions' },
-  { icon: '🤝', bg: '#f0fdf4', title: 'Collaboration', desc: 'Work closely with designers, QA and devs' },
-  { icon: '🛡️', bg: '#f0fdfa', title: 'Production Mindset', desc: 'Building for real users with quality and care' },
+  {
+    icon: '🖥️',
+    bg: '#eff6ff',
+    title: 'UI Engineering',
+    desc: 'Turn designs into responsive, accessible and production-ready interfaces',
+  },
+  {
+    icon: '🧩',
+    bg: '#faf5ff',
+    title: 'Design Systems',
+    desc: 'Build reusable patterns that keep interfaces consistent and scalable',
+  },
+  {
+    icon: '⚙️',
+    bg: '#fff7ed',
+    title: 'Frontend Architecture',
+    desc: 'Structure components and code for maintainability and reuse',
+  },
+  {
+    icon: '🔍',
+    bg: '#fef2f2',
+    title: 'Quality & Debugging',
+    desc: 'Track down tricky UI issues across browsers, devices and environments',
+  },
+  {
+    icon: '🤖',
+    bg: '#f0fdf4',
+    title: 'Automation & AI',
+    desc: 'Use automation and AI-assisted workflows to solve problems faster',
+  },
+  {
+    icon: '🤝',
+    bg: '#f0fdfa',
+    title: 'Team Collaboration',
+    desc: 'Work across design, QA and product to ship reliable solutions',
+  },
 ]
 
 export const stack = [
-  { label: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS / Sass'] },
-  { label: 'Frameworks', items: ['LitElement', 'Astro', 'Vue.js', 'React'] },
-  { label: 'Engineering', items: ['Design Systems', 'Responsive Design', 'Accessibility', 'Performance'] },
-  { label: 'Tools', items: ['Git', 'Figma', 'Node.js', 'Vite', 'Jira'] },
+  {
+    label: 'Frontend',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS / Sass'],
+  },
+  {
+    label: 'Frameworks',
+    items: ['React', 'LitElement', 'Astro', 'Vue.js'],
+  },
+  {
+    label: 'Engineering',
+    items: [
+      'Design Systems',
+      'Responsive Design',
+      'Accessibility',
+      'Web Components',
+      'Performance',
+    ],
+  },
+  {
+    label: 'AI & Automation',
+    items: [
+      'Cursor',
+      'Claude Code',
+      'GitHub Copilot',
+      'MCP Integration',
+      'AI-assisted Development',
+    ],
+  },
+  {
+    label: 'Tools',
+    items: ['Git', 'Figma', 'Node.js', 'Vite', 'Jira'],
+  },
+  {
+    label: 'Domain',
+    items: [
+      'Veeva CRM',
+      'Pharmaceutical Digital Content',
+      'Email Development',
+      'MJML',
+    ],
+  },
+  {
+    label: 'languages',
+    items: [
+      'English', 'French', 'Russian', 'Ukrainian', 'Polish',
+    ]
+  }
 ]
 
 export const cta = {

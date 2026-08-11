@@ -27,17 +27,17 @@ function Experience() {
               ))}
             </ul>
           </div>
-          <div className="exp-ach">
-            <span className="exp-ach-icon">📈</span>
-            <div style={{ flex: 1 }}>
-              {experience.achievements.map((achievement, i) => (
-                <>
-                <p className="exp-ach-title">{achievement.text}</p>
-                <p className="exp-ach-text">{achievement.label}</p>
-                <span className="exp-ach-big">{achievement.title}</span>
-                </>
-              ))}
-            </div>
+          <div className="exp-ach-list">
+            {experience.achievements.map((achievement) => (
+              <div className="exp-ach" key={achievement.title}>
+                <div className="exp-ach-top">
+                  <span className="exp-ach-icon">{achievement.icon}</span>
+                  <span className="exp-ach-big">{achievement.title}</span>
+                </div>
+                <p className="exp-ach-title">{achievement.label}</p>
+                <p className="exp-ach-text">{achievement.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
