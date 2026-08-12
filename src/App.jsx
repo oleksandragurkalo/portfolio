@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react'
 import Nav from './components/Nav/Nav.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Hero from './sections/Hero/Hero.jsx'
