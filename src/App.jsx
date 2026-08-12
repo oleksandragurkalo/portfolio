@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Analytics } from "@vercel/analytics/next"
 import Nav from './components/Nav/Nav.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Hero from './sections/Hero/Hero.jsx'
@@ -31,6 +32,7 @@ function App() {
         <Skills />
         <Workflow />
         <Contact />
+        <Analytics />
       </main>
       <Footer />
     </>
