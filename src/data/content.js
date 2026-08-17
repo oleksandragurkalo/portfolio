@@ -53,13 +53,16 @@ export const featuredProject = {
   role: 'Solo',
   caseStudy: {
     problem:
-      'Impulse purchases are easy to rationalize when the price is viewed as a single number. Before I Buy reframes the cost as working time, giving users a more meaningful way to pause and reconsider a purchase.',
+      'Impulse purchases are easy to rationalize when the price is viewed as a single number. Before I Buy reframes the cost as working time, giving users a more meaningful way to pause and reconsider a purchase, and lets them share wish lists with friends for accountability and easier gift-giving.',
     approach: [
       'Built a responsive waiting-list application where users add items, choose a cooling-off period and return when the item is ready to decide.',
       'Implemented income-based price conversion using hourly, monthly or annual income, with support for net or gross pay and five currencies.',
       'Added live currency conversion with a static fallback table so the application remains useful when exchange-rate data is unavailable.',
+      'Built a friend request system with read-only shared wish lists, so friends can see items of interest without exposing pay or other personal data.',
+      'Support multiple named lists per user with per-list savings-progress tracking, for organizing purchases by goal or occasion.',
       'Built purchase history, resistance tracking, streaks and category-based spending insights.',
       'Implemented authentication, PostgreSQL data storage and realtime synchronization using Supabase.',
+      'Added dark/light mode with system preference detection.',
       'Moved account deletion to a Vercel serverless function because the Supabase service-role key required for a hard delete cannot safely be exposed in client-side code.',
     ],
     result:
